@@ -52,7 +52,7 @@
 <script>
 $('#btnGen').click( () => {
   let ret = "";
-  let text = $('#pattern').text();
+  let text = $('#pattern').val();
   let fromVal = Number($('#timesF').val()) || 1;
   let toVal = Number($('#timesT').val()) || 10;
   let achieveFile = $('#achFile').val();
