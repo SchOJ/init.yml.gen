@@ -57,7 +57,7 @@ $('#btnGen').click( () => {
   let toVal = $('#timesT').val() !== "" ? Number($('#timesT').val()) : 1;
   let achieveFile = $('#achFile').val();
   if (achieveFile) ret += "archive: " + achieveFile + '\n';
-  ret += "testcases:" + '\n';
+  ret += "test_cases:" + '\n';
   for(i = fromVal;i<=toVal;i++) ret += text.replace(/%s/g,i) + '\n';
   $('#result').val(ret);
 });
