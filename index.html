@@ -54,7 +54,7 @@ $('#btnGen').click( () => {
   let ret = "";
   let text = $('#pattern').val();
   let fromVal = $('#timesF').val() !== "" ? Number($('#timesF').val()) : 1;
-  let toVal = $('#timesT').val() !== "" ? Number($('#timesT').val()) : 1;
+  let toVal = $('#timesT').val() !== "" ? Number($('#timesT').val()) : 10;
   let achieveFile = $('#achFile').val();
   if (achieveFile) ret += "archive: " + achieveFile + '\n';
   ret += "test_cases:" + '\n';
